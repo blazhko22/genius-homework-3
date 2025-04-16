@@ -130,6 +130,7 @@ ul {
     color: var(--color-primary-dark);
     font-size: 18px;
     line-height: 1.17;
+    transition: color 0.2s;
 }
 
 .header__nav-list-item:hover,
@@ -145,6 +146,7 @@ ul {
 
 .header__list-item {
     fill: var(--color-primary-dark);
+    transition: fill 0.2s;
 }
 
 .header__list-item:hover,
@@ -211,13 +213,21 @@ ul {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.17;
-    border: none;
+    border: solid 2px var(--color-primary-normal);
     padding: 16px 32px;
     cursor: pointer;
     border-radius: 32px;
 
     background-color: var(--color-primary-normal);
     color: var(--color-primary-light);
+
+    transition: all 0.2s;
+}
+
+.section__hero-box-btn:hover {
+    border: solid 2px var(--color-primary-normal);
+    background-color: transparent;
+    color: var(--color-primary-dark);
 }
 
 .section__hero-box-info {
@@ -283,6 +293,23 @@ ul {
 
 .section__reincarnation-box-stars {
     position: absolute;
+
+    animation-name: star;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes star {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 20%;
+        height: 20%;
+    }
 }
 
 .star1 {
@@ -424,10 +451,13 @@ ul {
     border-radius: 50%;
     cursor: pointer;
 
-    &:hover {
-        fill: var(--color-primary-light);
-        background-color: var(--color-primary-dark);
-    }
+    transition: all 0.2s;
+}
+
+.carousel-button:hover {
+    fill: var(--color-primary-light);
+    background-color: var(--color-primary-normal);
+    border: 2px solid var(--color-primary-normal);
 }
 
 .next {
@@ -501,15 +531,18 @@ ul {
 
 .footer__address-block-social-list-item {
     fill: var(--color-primary-light);
+    transition: fill 0.2s;
 }
 
 .footer__address-block-social-list-item:hover {
     fill: var(--color-primary-normal);
 }
 
-.footer ul a,
-.footer__address-box a {
+.footer__nav-list-item,
+.footer__address-block-info-list-item,
+.footer__address-box-link {
     color: var(--color-primary-light);
+    transition: color 0.2s;
 }
 
 .footer__address-box-text {
