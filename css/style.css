@@ -315,7 +315,7 @@ ul {
             rgba(255, 255, 255, 0.1932),
             rgba(255, 255, 255, 0)
         ),
-        url(../images/backround-hero.jpg);
+        url(../images/fon.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -405,7 +405,7 @@ ul {
 .container-reincarnation {
     display: flex;
     gap: 32px;
-    padding-top: 106px;
+    /* padding-top: 106px; */
 }
 
 .section__reincarnation-block {
@@ -438,6 +438,9 @@ ul {
 }
 
 .section__reincarnation-box-neck {
+    position: absolute;
+    top: 368px;
+    right: 0;
     margin-left: auto;
 }
 
@@ -483,18 +486,15 @@ ul {
 /* Section why */
 
 .section__why {
-    background: linear-gradient(
-        rgba(43, 127, 255, 0.2) 59.74%,
-        rgba(43, 127, 255, 0) 109.16%,
-        rgba(43, 127, 255, 0) 137.66%
-    );
+    background-image: url(../images/bgWhy.png);
+    background-position-y: 200px;
 }
 
 .container-why {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 176px;
+    padding-top: 410px;
     padding-bottom: 96px;
 }
 
