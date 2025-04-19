@@ -49,5 +49,9 @@
                 d="M6.693 0l10.657 10.184 14.322-3.491-10.184 10.658 3.491 14.322-10.657-10.184-14.322 3.491 10.184-10.657-3.491-14.322z">
             </path>
         </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M9 6l6 6 6-6M9 18l6-6 6 6"></path>
+        </symbol>
     </defs>
 </svg>
